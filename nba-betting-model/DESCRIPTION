@@ -1,0 +1,36 @@
+Package: nbabetting
+Type: Package
+Title: Bayesian NBA Betting Model with DunksAndThrees Integration
+Version: 1.0.0
+Authors@R: person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: A comprehensive Bayesian betting model for NBA games that generates
+    probability distributions for spreads, totals, team totals, and moneylines.
+    Integrates DunksAndThrees adjusted efficiency data with internal tempo tracking,
+    weighted rotation analysis, and Monte Carlo simulation. Implements exponential
+    decay weighting (15-game half-life) for recent performance, lineup impact
+    adjustments using player EPM values, and venue-specific effects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends:
+    R (>= 4.0.0)
+Imports:
+    dplyr (>= 1.0.0),
+    tidyr (>= 1.0.0),
+    purrr (>= 0.3.0),
+    tibble (>= 3.0.0),
+    ggplot2 (>= 3.3.0),
+    lubridate (>= 1.7.0),
+    httr (>= 1.4.0),
+    jsonlite (>= 1.7.0),
+    DBI (>= 1.1.0),
+    RSQLite (>= 2.2.0),
+    glue (>= 1.4.0),
+    scales (>= 1.1.0)
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    covr
+VignetteBuilder: knitr
